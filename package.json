@@ -10,7 +10,8 @@
   "scripts": {
     "preview": "astro preview",
     "dev": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "test": "node --test tests/landing.test.mjs"
   },
   "private": true,
   "type": "module",
