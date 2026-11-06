@@ -1,0 +1,329 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../config/site";
+---
+
+<Base>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Menos papeleo.<br /><em>Más piscinas.</em></h1>
+          <p class="hero-description">
+            Tu empresa de mantenimiento tiene mucho que hacer. Llevar los
+            presupuestos, clientes y cobros no debería quitarte más tiempo del
+            necesario.
+          </p>
+          <p class="hero-support">
+            PoolOps te acerca Ábaco, el software de gestión para empresas de
+            servicios, a tu día a día en piscinas.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href={site.appUrl}
+              >Probar PoolOps <svg class="icon" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg></a
+            >
+            <a class="text-link" href="#ventajas"
+              >Descubre qué ganas <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-check"></use>
+            </svg> 14 días gratis, sin tarjeta ni cobro automático
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1757839937085-790777ac209a?auto=format&fit=crop&w=1100&q=80"
+            srcset="https://images.unsplash.com/photo-1757839937085-790777ac209a?auto=format&fit=crop&w=600&q=75 600w, https://images.unsplash.com/photo-1757839937085-790777ac209a?auto=format&fit=crop&w=1100&q=80 1100w"
+            sizes="(max-width: 720px) 100vw, 50vw"
+            width="1100"
+            height="1100"
+            fetchpriority="high"
+            alt="Profesional limpiando una piscina"
+          />
+          <div class="hero-image-note">
+            <svg class="icon" aria-hidden="true">
+              <use href="#icon-drop"></use>
+            </svg><span
+              >Tu trabajo está fuera.<br /><strong
+                >Tu gestión también puede estarlo.</strong
+              ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="ventajas" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-heading intro-heading">
+          <div>
+            <h2 id="intro-title">
+              Tu tiempo vale más<br />que un montón de papeles.
+            </h2>
+          </div>
+          <p>
+            Cuando todo está organizado, puedes dedicarte a tus clientes y dejar
+            de buscar información por todas partes.
+          </p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <span class="feature-icon"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-users"></use>
+              </svg></span
+            >
+            <h3>Encuentra cada cliente a la primera.</h3>
+            <p>
+              Ten sus datos de contacto y facturación en un solo lugar. Menos
+              búsquedas entre papeles y conversaciones.
+            </p>
+          </article>
+          <article class="benefit-card">
+            <span class="feature-icon"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-document"></use>
+              </svg></span
+            >
+            <h3>Prepara presupuestos sin empezar de cero.</h3>
+            <p>
+              Usa tu catálogo de servicios y materiales, envía la propuesta y
+              deja que el cliente responda desde el enlace.
+            </p>
+          </article>
+          <article class="benefit-card">
+            <span class="feature-icon"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-wallet"></use>
+              </svg></span
+            >
+            <h3>Sabes qué está pendiente de cobrar.</h3>
+            <p>
+              Consulta tus facturas, registra los pagos y revisa los importes
+              pendientes sin tener que repasarlo todo a mano.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="workday section"
+      id="como-funciona"
+      aria-labelledby="workday-title"
+    >
+      <div class="container workday-grid">
+        <div class="workday-copy">
+          <h2 id="workday-title">De «te paso precio» a presupuesto enviado.</h2>
+          <p>
+            Una puesta a punto, un cambio de bomba o el mantenimiento de toda la
+            temporada. Prepara una propuesta clara y compártela sin
+            complicaciones.
+          </p>
+          <div class="workflow-list">
+            <div>
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-check"></use>
+              </svg>
+              <p>Reutiliza los servicios y materiales de tu catálogo.</p>
+            </div>
+            <div>
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-check"></use>
+              </svg>
+              <p>Envía el presupuesto por correo, WhatsApp o enlace.</p>
+            </div>
+            <div>
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-check"></use>
+              </svg>
+              <p>El cliente puede aceptarlo o rechazarlo desde su móvil.</p>
+            </div>
+          </div>
+          <a class="inline-arrow" href={site.appUrl}
+            >Descubrir PoolOps <svg class="icon" aria-hidden="true">
+              <use href="#icon-arrow"></use>
+            </svg></a
+          >
+        </div>
+        <div class="workday-visual">
+          <img
+            src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=950&q=75"
+            width="950"
+            height="1050"
+            loading="lazy"
+            decoding="async"
+            alt="Piscina de agua azul"
+          />
+          <div
+            class="estimate-card"
+            aria-label="Ejemplo ilustrativo de un presupuesto de mantenimiento"
+          >
+            <div class="estimate-heading">
+              <span class="estimate-icon"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#icon-document"></use>
+                </svg></span
+              >
+              <div>
+                <strong>Presupuesto</strong><small>Ejemplo ilustrativo</small>
+              </div>
+            </div>
+            <div class="estimate-divider"></div>
+            <span class="estimate-label">Servicio</span>
+            <p>Mantenimiento de piscina</p>
+            <div class="estimate-lines">
+              <span>Productos y materiales</span><span>Mano de obra</span>
+            </div>
+            <div class="estimate-send">
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-check"></use>
+              </svg> Listo para compartir
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="field section" aria-labelledby="field-title">
+      <div class="container field-inner">
+        <div class="field-copy">
+          <h2 id="field-title">
+            Preparado para trabajar también a pie de piscina.
+          </h2>
+          <p>
+            Ábaco está incorporando herramientas para que la información de cada
+            visita no se quede en una libreta o en el móvil de un técnico.
+          </p>
+          <p class="field-disclaimer">
+            Funciones de campo en desarrollo. Requieren validación y puesta en
+            marcha antes de estar disponibles.
+          </p>
+        </div>
+        <div class="field-features">
+          <article>
+            <span class="field-icon"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-calendar"></use>
+              </svg></span
+            >
+            <div>
+              <h3>Visitas y contratos</h3>
+              <p>
+                Planificación de visitas y mantenimiento recurrente, con
+                frecuencia por temporada.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="field-icon"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-drop"></use>
+              </svg></span
+            >
+            <div>
+              <h3>Mediciones del agua</h3>
+              <p>
+                Registro de pH, desinfectante y temperatura vinculado a la
+                piscina y a la visita.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="field-icon"
+              ><svg class="icon" aria-hidden="true">
+                <use href="#icon-document"></use>
+              </svg></span
+            >
+            <div>
+              <h3>Partes de trabajo</h3>
+              <p>
+                Notas, tareas, materiales y fotos para dejar constancia de lo
+                realizado.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section" id="preguntas" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div>
+          <h2 id="faq-title">Preguntas frecuentes.</h2>
+          <p class="faq-intro">Todo lo que necesitas saber antes de empezar.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>¿Qué es PoolOps?<span aria-hidden="true">+</span></summary>
+            <p>
+              PoolOps es la presentación de Ábaco para profesionales del
+              mantenimiento de piscinas. Ábaco es el producto de Doscientos que
+              utilizarás para gestionar tu negocio.
+            </p>
+          </details>
+          <details>
+            <summary
+              >¿Para quién está pensado?<span aria-hidden="true">+</span
+              ></summary
+            >
+            <p>
+              Para autónomos y pequeñas empresas que mantienen piscinas y
+              quieren organizar mejor sus clientes, presupuestos, facturas y
+              cobros.
+            </p>
+          </details>
+          <details>
+            <summary
+              >¿Puedo probar PoolOps antes de contratar?<span aria-hidden="true"
+                >+</span
+              ></summary
+            >
+            <p>
+              Sí. Ábaco ofrece 14 días de prueba, sin tarjeta y sin cobro
+              automático al terminar. Puedes consultar las condiciones y planes
+              en Ábaco.
+            </p>
+          </details>
+          <details>
+            <summary
+              >¿Están disponibles las funciones de visitas y piscinas?<span
+                aria-hidden="true">+</span
+              ></summary
+            >
+            <p>
+              Ábaco está desarrollando estas herramientas. Su disponibilidad
+              depende de la validación y puesta en marcha en cada entorno;
+              consulta su estado antes de utilizarlas.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="container">
+        <div class="closing-card">
+          <div>
+            <h2 id="closing-title">Tu próximo trabajo empieza aquí.</h2>
+            <p>
+              Prueba PoolOps y dedica menos tiempo a gestionar tu empresa de
+              piscinas.
+            </p>
+          </div>
+          <div class="closing-action">
+            <a class="button button-dark" href={site.appUrl}
+              >Probar PoolOps <svg class="icon" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg></a
+            ><small>14 días de prueba · Sin tarjeta</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
