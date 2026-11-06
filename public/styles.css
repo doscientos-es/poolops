@@ -4,8 +4,8 @@
   --muted: #536d70;
   --paper: #f5f7f4;
   --line: #d8e2df;
-  --display: "Segoe UI", Arial, sans-serif;
-  --body: "Segoe UI", Arial, sans-serif;
+  --display: "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif;
+  --body: "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

@@ -17,4 +17,4 @@ La marca, los metadatos y el destino de los CTA se definen en `src/config/site.t
 
 El canonical y el sitemap apuntan a `https://poolops.doscientos.es/`; configura ese dominio antes de considerar la publicación definitiva.
 
-Las fotografías se cargan desde Unsplash y la página usa tipografías del sistema. La ilustración del presupuesto es un ejemplo, no una captura de la aplicación. Las funciones de campo están en desarrollo y deben validarse antes de anunciar su disponibilidad.
+Las fotografías se cargan desde Unsplash y la tipografía Plus Jakarta Sans desde Google Fonts, con una alternativa del sistema. La ilustración del presupuesto es un ejemplo, no una captura de la aplicación. Las funciones de campo están en desarrollo y deben validarse antes de anunciar su disponibilidad.
